@@ -16,6 +16,7 @@ import './App.css';
 import WelcomeDashboard from './components/DashBoard';
 import { toast } from 'react-toastify';
 import { useAuth } from './common/AuthContext';
+import GoogleMapsPage from './GoogleMapsPage';
 import PrivateRoute from './common/PrivateRoute';
 
 
@@ -53,6 +54,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/create-trip" element={<CreateTripForm />} />
             <Route path="/explore" element={<Explore/>} />
+            <Route path="/map" element={<GoogleMapsPage />} />
             <Route path="/trip" element={<TripDetail />} />
             <Route path="/trip/:id" element={<TripDetailById />} />
             <Route path="/login" element={<Login authenticated={authenticated} />} />

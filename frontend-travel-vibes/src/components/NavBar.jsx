@@ -9,6 +9,8 @@ const NavBar = ({ authenticated, onLogout }) => {
         <span className="text-xl font-bold text-gray-800">VibeTravel</span>
       </Link>
       <div className="space-x-4">
+      <Link to="/map" className="text-gray-600 text-sm hover:underline">GoogleMaps</Link>
+      <Link to="/" className="text-gray-600 text-sm hover:underline">Home</Link>
         <Link to="/create-trip" className="text-gray-600 text-sm hover:underline">Create Trip</Link>
         <Link to="/explore" className="text-gray-600 text-sm hover:underline">Explore</Link>
         <Link to="/about" className="text-gray-600 text-sm hover:underline">About</Link>
